@@ -116,7 +116,9 @@ def to_visits_constaint_matrix(edges, nodes_n):
     B = np.zeros(shape=(nodes_n, len(edges)), dtype=np.int32)
     for eix, edge in enumerate(edges):
         i, j, k = edge
+        B[i, eix] = 1
         B[j, eix] = 1
+        B[k, eix] = 1
 
     return B
 
