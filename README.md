@@ -7,9 +7,14 @@ Here's the node numbers that I use:
 
 The solution is 
 
-6 -> 4 -> 3 -> 0 -> 1 -> 7 -> 5 -> 0 -> 1 -> 2 -> 4 -> 6 -> ...
+3 -> 0 -> 1 -> 7 -> 5 -> 0 -> 1 -> 2 -> 4 -> 6 -> 7 -> 6 -> 4 -> 3 -> ...
+
 
 Note that I had to add one non-smooth edge 6->7->6, otherwise solution doesn't exist.
 
 But if you don't care about having a strict loop (required for "proper" TSP),
 you can add it near the start node, and then "break it off" after solution is found.
+
+So applying this advice, we would begin in 6 and have
+
+6 -> 4 -> 3 -> 0 -> 1 -> 7 -> 5 -> 0 -> 1 -> 2 -> 4 -> 6
