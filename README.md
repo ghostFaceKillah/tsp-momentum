@@ -9,4 +9,4 @@ The solution is
 
 3 -> 0 -> 1 -> 7 -> 5 -> 0 -> 1 -> 2 -> 4 -> 6 -> 7 -> 6 -> 4 -> 3 -> ...
 
-Note that I had to add one non-smooth edge
+Note that I had to add one non-smooth edge 6->7->6, otherwise solution doesn't exist.
