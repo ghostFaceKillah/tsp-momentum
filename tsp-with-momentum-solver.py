@@ -1,8 +1,8 @@
 import attr
 import copy
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Dict, Optional
 import numpy as np
-from brainos.utils.result import Result
+
 from ortools.linear_solver import pywraplp
 
 
@@ -176,7 +176,7 @@ def solve_traversal(graph: FunkyGraph):
                 solution.append(edge)
             print(f'Edge {x.name()} traversed {x.solution_value()} times')
     else:
-        solution = Result.error("Didn't find solution")
+        solution = None
         print('The problem does not have an optimal solution.')
 
     print("     ")
